@@ -11,7 +11,7 @@
 <body>
     <div id="app" class="email-container">
         <h1>Lista eMail</h1>
-        <ul>
+        <ul v-if="emailList.length >= 10">
             <li v-for="email in emailList">
                 <i class="fa-solid fa-envelope"></i>
                 {{ email }}
